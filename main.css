@@ -1,0 +1,161 @@
+body {
+    font-family: "MS 明朝",serif;
+    background-color: rgba(0,0,0,.85);
+    color: #fff;
+}
+
+.menu-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu-lines {
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+
+.menu-line {
+    position: absolute;
+    display: block;
+    background: #fff;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    transition: all .25s ease;
+    z-index: 30;
+}
+
+.menu-line1 {
+    top: 2px;
+}
+
+.menu-line2 {
+    top: 11.75px;
+}
+
+.menu-line3 {
+    top: 21.5px;
+}
+
+.open .menu-line1 {
+    top: 12.5px;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
+.open .menu-line2 {
+    opacity: 0;
+}
+
+.open .menu-line3 {
+    top: 12.5px;
+    transform: rotate(-45deg);
+    width: 30px;
+}
+
+.menu-list {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: none;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+
+.menu-list a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin: 1vw 0;
+}
+
+.menu-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list-big {
+    font-size: 3vw;
+}
+
+.menu-list-small {
+    font-size: 2vw;
+}
+
+.open .menu-list {
+    display: block;
+}
+
+.open .menu-list-big {
+    font-size: 3vw;
+}
+
+.open .menu-list-small {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 767px) {
+    .open .menu-list-big {
+        font-size: 5vw;
+    }
+
+    .open .menu-list-small {
+        font-size: 3vw;
+    }
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+p {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 2vw;
+    }
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
